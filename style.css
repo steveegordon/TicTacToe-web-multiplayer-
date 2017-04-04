@@ -1,0 +1,130 @@
+body {
+  width: 100vw;
+}
+
+.container {  display: flex;
+              flex-wrap: wrap;
+              margin: 0 auto;
+              width: 80%;
+              height: 70vh;
+              }
+
+h1 {text-align: center;
+  font-size: 4em;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;}
+
+.squares {height: 33%;
+          width: 33%;
+          border: 1px solid black;
+          background-color: #647584;
+          float: left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color:rgba(0,0,0,0.0);
+          background-image: url(http://imgs.inkfrog.com/pix/discountbulbs/Grey_600.jpg);
+        }
+
+#pturn { background-color: white;
+        width: 300px;
+        height: 50px;
+        border-radius: 50px;
+        text-align: center;
+        padding-top: 20px;
+        margin: 0 auto;
+        }
+
+.squares:hover {background-color: blue;}
+
+body {background-color: #4E6E44;}
+
+body#forest {background-color: #4E6E44;}
+
+body#forest .squares {background-image: url(assets/images/greyScale.jpg);}
+
+.score { background-color: white;
+          padding: 20px;
+          border-radius: 25%;}
+
+
+
+#p1wins {float: left;
+}
+
+#p2wins {float: right;
+}
+.scoreLeft {}
+
+.scoreRight {float: right;}
+
+
+body#sea { background-color: #006994;}
+
+body#sea .squares {background-color: #20B2AA;
+                   background-image: none;}
+
+body#fire { background-color: #BB0000;}
+
+body#fire .squares {background-image: none;
+                    background-color: #FFA500;}
+
+body#forest .squares[pval="0"] {background-image: url(assets/images/grumpyCat.jpg);}
+body#fire .squares[pval="0"] {background-image: url(assets/images/grumpyCat.jpg);}
+body#sea .squares[pval="0"] {background-image: url(assets/images/grumpyCat.jpg);}
+
+body#forest .squares[pval="1"] {background-image: url(assets/images/pianoCat.jpg);}
+body#fire .squares[pval="1"] {background-image: url(assets/images/pianoCat.jpg);}
+body#sea .squares[pval="1"] {background-image: url(assets/images/pianoCat.jpg);}
+
+#overlay {
+  visibility: visible;
+  position: fixed;
+  background-color: rgba(192,192,192,1);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  overflow: auto;
+}
+
+#gamesOverlay {
+  visibility: visible;
+  position: fixed;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 500;
+  overflow: auto;
+}
+
+#gamesHeader {
+  width: 100%;
+}
+
+#gamesList {
+  width: 100%;
+}
+
+.game {
+  width: 20%;
+  height: 100px;
+  border: solid black 2px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+#splashBG {
+  display: block;
+  position: absolute;
+  background-color: rgba(255,255,255,1);
+  top: 33%;
+  left: 33%;
+  width: 34%;
+  height: 34%;
+  border: 5px solid #000000;
+}
+
+#splashBG h2 {
+  font-size: 1em;
+}
+
